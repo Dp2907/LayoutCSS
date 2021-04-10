@@ -10,6 +10,12 @@ h2 {
   font-weight: 600;
 }
 
+.pushtotop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
 .header__container {
   max-width: 80rem;
   margin: 0 auto;
@@ -17,7 +23,7 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .header__left h1 {
@@ -82,14 +88,108 @@ h2 {
   max-width: 80rem;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height:100%;
-  width:50%;
+  height: 100%;
+  width: 50%;
 }
 
-.carousel__container p {
-    color:white;
-    letter-spacing: 5px;
+.carousel__content {
+  text-align: center;
+}
+
+.carousel__content p {
+  color: white;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel__content h1 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.carousel__content p:nth-child(3) {
+  color: white;
+  letter-spacing: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.carousel__content button {
+  color: white;
+  background-color: #82b62d;
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.carousel__dots i {
+  color: white;
+  margin: 0 5px;
+}
+
+.carousel__dots i:first-child {
+  color: #82b62d;
+}
+
+.about__container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.about__container h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.about__item h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 1.2rem;
+  margin:0 0 1rem 0;
+  font-weight: 900;
+}
+
+.about__item p,span {
+  color:#999999;
+}
+
+.about__item span{
+  display: block;
+  margin-bottom: 2rem;
+}
+.about__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.about__item:first-child {
+  grid-column: 1 / span 2;
+}
+
+.about__item:last-child {
+  grid-column: 2 / span 2;
+}
+
+.about__item button {
+  color: white;
+  background-color: #82b62d;
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
 }
